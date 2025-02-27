@@ -6,7 +6,7 @@ import random
 print("Hello, World!")
 
 x = 5
-y = 3.14
+y = 3.14 #float
 z = 4
 a = (x+y+z)
 
@@ -20,6 +20,10 @@ print(type(a))
 print("Enter your name:")
 n1 = input()
 print("Hello, " + n1)
+
+print("Hello,  World!"[4]) # prints the character at index 4
+print("123" + "345") # concatenates the two numbers
+print(123_456_789) # underscores are ignored in numbers, used for readability
 
 n2 = input("Enter your birth year:")
 m1 = str((datetime.datetime.now().year)-int(n2))
@@ -69,8 +73,7 @@ pattern = "a\s*b\s*c"  # This regex allows for any spaces between a, b, and c
 cleaned_text = re.sub(pattern, "", text) # This will remove all occurrences of "a b c" from the text
 
 print(cleaned_text)
-'''
-'''
+
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(list1)
 
