@@ -44,3 +44,4 @@ while True:
 		print("Invalid input. Please enter a valid number for the number of people.\n") # Non-numeric input handling
 split_bill = round((total_bill + (total_bill * tip_percentage / 100)) / people, 2)
 print(f"Each person should pay: ${split_bill}")
+print("Thank you for using the Tip Calculator")
