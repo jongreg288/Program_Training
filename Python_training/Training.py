@@ -1,4 +1,3 @@
-import math
 import datetime
 import random
 
@@ -110,3 +109,23 @@ for x in list_112:
 
 # range() - generates a sequence of numbers
 # range(start, stop, step) - generates a sequence of numbers starting from 'start', up to 'stop' (exclusive), incrementing by 'step'
+
+training_dictionary = {} # creates an empty dictionary
+training_dictionary["name"] = "John" # adds a key-value pair to the dictionary
+training_dictionary["age"] = 30 # adds a key-value pair to the dictionary
+training_dictionary["city"] = "New York" # adds a key-value pair to the dictionary
+# training_dictionary.clear() # removes all elements from the dictionary
+# del training_dictionary["age"] # removes the key-value pair with the specified key
+for key in training_dictionary: # iterates over the keys of the dictionary
+    print(key) # prints the keys of the dictionary
+    print(training_dictionary[key]) # prints the values of the dictionary
+print(training_dictionary) # prints the dictionary
+print(training_dictionary.keys()) # prints the keys of the dictionary
+print(training_dictionary.values()) # prints the values of the dictionary
+training_dictionary[key] = "Updated Value" # updates the value of the specified key]
+
+test_Val = {
+    "Set_1": [4, -1, 5, 9, 34, 54, 2]
+}
+max_value = max(test_Val["Set_1"]) # returns the largest value
+print(max_value)
