@@ -1,3 +1,4 @@
+from tracemalloc import start
 import turtle
 import math
 import random
@@ -15,7 +16,7 @@ speed = 6
 
 #movement control
 #comment out from here to see the assignment in action
-def move_player():
+"""def move_player():
     player.forward(speed)
 
 def up():
@@ -46,9 +47,9 @@ sc.onkey(toggle_pen, "space")
 sc.onkeypress(key='w', fun=up)
 sc.onkeypress(key='s', fun=down)
 sc.onkeypress(key='d', fun=right)
-sc.onkeypress(key='a', fun=left)
+sc.onkeypress(key='a', fun=left)"""
 
-#this was the actual assignment, comment out the above code and uncomment the below code to see the assignment in action. 
+#this portion draws polygons of increasing side count. 
 """c = 4
 s = 4
 
@@ -62,4 +63,16 @@ while s < 11:
     s += 1
     c = s"""
 
+#this portion will draw a spirograph.
+"""start = player.pos()
+player.speed(0)
+i = 0
+
+while i < 100:
+    if player.distance(start) < 1:
+        player.circle(math.asin(1/math.sqrt(2))*100)
+    player.right(math.pi*math.sqrt(2))
+
+    i += 1
+"""
 turtle.done() #keeps the window open, use the close button to exit the program
